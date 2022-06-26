@@ -5,8 +5,8 @@
 
 * [Label-tool](#Label-tool)
 * [Scrapper](#Scrapper)
-* [Sentiment analysis](#Sentiment analysis)
-* [Event detection](#Event detection)
+* [Sentiment analysis](#Sentiment-analysis)
+* [Event detection](#Event-detection)
 * [Docker](#Docker)
 
 
@@ -195,7 +195,7 @@ Following command is required in order to run fast api
 
 
 
-#### Event detection
+## Event detection
 
 With event labels (Timely access, health, food, phc, patient, centricity, innovation, innocative therapies, advocary/reform, affordability, health inequity/disparity and initiatives/education.)
 
