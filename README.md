@@ -158,7 +158,7 @@ Realtime Database instance and automatically receive updates with the newest dat
 ## Deep learning with Bert for sentiment analysis and event detection
 
 <p align="center" width="100%">
-    <img width="50%" src="https://i.ibb.co/0yz81K9/bert.png">
+    <img width="50%" src="images/bert.png">
 </p>
 
 ###[BERT](https://github.com/google-research/bert)
