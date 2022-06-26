@@ -7,8 +7,8 @@
 * [Scrapper](#Scrapper)
 * [Sentiment analysis](#Sentiment-analysis)
 * [Event detection](#Event-detection)
-* [Deployment](#Docker)
-* [Train your own model](##Train-your-own-model)
+* [Deployment](#Deployment)
+* [Train your own model](#Train-your-own-model)
 
 
 ## Label-tool
