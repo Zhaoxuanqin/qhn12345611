@@ -7,7 +7,8 @@
 * [Scrapper](#Scrapper)
 * [Sentiment analysis](#Sentiment-analysis)
 * [Event detection](#Event-detection)
-* [Docker](#Docker)
+* [Deployment](#Docker)
+* [Trian your own model](##Trian your own model)
 
 
 ## Label-tool
@@ -219,13 +220,76 @@ Following command is required in order to run fast api
    uvicorn --host 0.0.0.0 --port 8002 fast_ed2:app --reload
   ```
 
-# [Docker](https://hub.docker.com/)
+# Deployment 
+
+For this project, we use docker to deploy our label tool, scrapper, and models. 
+
+##[Docker](https://hub.docker.com/)
 
 For convenience and handle incompatibility issue. we use docker to deploy the label tool,
-scrapper, models by docker. Since we have already finished writing docker file. you just 
+scrapper, models by docker.
+
+At first, you have to create a [docker account](https://hub.docker.com/) then run this command to login
+to docker 
+ ```
+   sudo docker login -u="${DOCKER_USERNAME}" -p="${DOCKER_PASSWORD}"
+ ```
+
+Since we have already finished writing docker file. you just 
 need to going to the ground folder of each component(label tool,scrapper,ed,sa) then run the
-following command, you are able to build your own images.
+following commands, you are able to build your own images, tag images, and push to docker hub. 
 
  ```
-   sudo docker build -t [dockerfile-name]:[tag] .
+   sudo docker build -t [image-name]:[tag] .
  ```
+ You need to copy the image ID when you build the image successfully
+ 
+ ```
+   sudo docker images
+ ```
+ After copying image ID, run
+ 
+ ```
+   sudo docker tag [image-ID] [docker-hub-username/image-name]:[tag] 
+ ```
+ Then. push the tagged image to docker hub
+ 
+ ```
+   sudo docker push [docker-hub-username/image-name]:[tag] 
+ ```
+ when successfully push the image to your docker hub, going to your virtual machine or your cloud server, run 
+ 
+ ```
+   sudo docker pull [docker-hub-username/image-name]:[tag] 
+   
+ ```
+ finshing excueting all the above command, you are able to find your own docker image in the virtaul machine
+ 
+ For running label-tool, run 
+ ```
+   sudo docker run --network host [docker-hub-username/image-name]:[tag] npm run buildStart3
+ ```
+ For running scrapper or models, run 
+ ```
+   sudo docker run --network host [docker-hub-username/image-name]:[tag]
+ ```
+ ## Trian your own model
+ 
+
+This Language models are built on the pretrained model BERT both for the sentiment analysis task and event detection task. 
+1.Pretrained model
+The BERT model is pretrained by the tweets data provided by Kaggle(url). Going to the sa or ed folder, Then you can run the code “BERT_pretraining.ipynb”  line by line to pretrain the BERT model.
+2.Sentiment Analysis Model
+(1) Using the code “Data_preprocessing_sentiment_analysis.ipynb” to split the data into train.csv, val.csv and test.csv. And we preprocess the unlabeled data by using the code “Unlabelled_data_preprocessing.ipynb”.
+(2) Run the script “run.sh” by using command “sh run.sh”
+(3) Check the results in the results folder and find the best model for the deployment.
+3.Event Detection Model
+(1) Using the code “Data_preprocessing_event_detection.ipynb” to split the data into train.csv, val.csv and test.csv. And we preprocess the unlabeled data by using the code “Unlabelled_data_preprocessing.ipynb”.
+(2) Run the script “run.sh” by using command “sh run.sh”
+(3) Check the results in the results folder and find the best model for the deployment
+
+ 
+ 
+ 
+ 
+ 
