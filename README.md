@@ -4,15 +4,7 @@
 ### Table of Contents
 
 * [Label-tool](#Label-tool)
-  * [Install](#Install)
-  * [Workflow of label tool](#Workflow of label tool)
-  * [Label app component](#Label app component)
-  * [Learn More](#Learn More)
-  * [Dependencies](#Dependencies)
 * [Scrapper](#Scrapper)
-  * [Fast api](#FastAPI)
-  * [Store online](#Store online)
-  * [Collected data](#Collected data)
 * [Sentiment analysis](#Sentiment analysis)
 * [Event detection](#Event detection)
 * [Docker](#Docker)
@@ -178,7 +170,7 @@ calculated based upon their connection. BERT was pretrained on two tasks: langua
 
 ####[Learn more](https://arxiv.org/abs/1810.04805)
 
-##Sentiment analysis
+## Sentiment analysis
 
 With three labels (negative,positive,neutral)
 
@@ -203,7 +195,7 @@ Following command is required in order to run fast api
 
 
 
-####Event detection
+#### Event detection
 
 With event labels (Timely access, health, food, phc, patient, centricity, innovation, innocative therapies, advocary/reform, affordability, health inequity/disparity and initiatives/education.)
 
