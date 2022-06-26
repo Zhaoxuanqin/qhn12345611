@@ -8,7 +8,7 @@
 * [Sentiment analysis](#Sentiment-analysis)
 * [Event detection](#Event-detection)
 * [Deployment](#Docker)
-* [Trian your own model](##Trian-your-own-model)
+* [Train your own model](##Train-your-own-model)
 
 
 ## Label-tool
@@ -273,9 +273,9 @@ following commands, you are able to build your own images, tag images, and push 
  ```
    sudo docker run --network host [docker-hub-username/image-name]:[tag]
  ```
- ## Trian your own model
+ ## Train your own model
  
-
+if you want to train you own model, following the following steps
 This Language models are built on the pretrained model BERT both for the sentiment analysis task and event detection task. 
 1.Pretrained model
 The BERT model is pretrained by the tweets data provided by Kaggle(url). Going to the sa or ed folder, Then you can run the code “BERT_pretraining.ipynb”  line by line to pretrain the BERT model.
