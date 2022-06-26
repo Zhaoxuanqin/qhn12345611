@@ -3,19 +3,19 @@
 
 ### Table of Contents
 
-* [Label-tool](##Label-tool)
-  * [Install](###Install)
-  * [Workflow of label tool](###Workflow of label tool)
-  * [Label app component](###Label app component)
-  * [Learn More](###Learn More)
-  * [Dependencies](###Dependencies)
-* [Scrapper](##Scrapper)
-  * [Fast api](###FastAPI)
-  * [Store online](###Store online)
-  * [Collected data](####Collected data)
-* [Sentiment analysis](##Sentiment analysis)
-* [Event detection](####Event detection)
-* [Docker](##Docker)
+* [Label-tool](#Label-tool)
+  * [Install](#Install)
+  * [Workflow of label tool](#Workflow of label tool)
+  * [Label app component](#Label app component)
+  * [Learn More](#Learn More)
+  * [Dependencies](#Dependencies)
+* [Scrapper](#Scrapper)
+  * [Fast api](#FastAPI)
+  * [Store online](#Store online)
+  * [Collected data](#Collected data)
+* [Sentiment analysis](#Sentiment analysis)
+* [Event detection](#Event detection)
+* [Docker](#Docker)
 
 
 ## Label-tool
