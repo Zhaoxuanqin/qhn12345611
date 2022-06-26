@@ -8,7 +8,7 @@
 * [Sentiment analysis](#Sentiment-analysis)
 * [Event detection](#Event-detection)
 * [Deployment](#Docker)
-* [Trian your own model](##Trian your own model)
+* [Trian your own model](##Trian-your-own-model)
 
 
 ## Label-tool
