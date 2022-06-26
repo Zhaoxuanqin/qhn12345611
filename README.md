@@ -219,7 +219,7 @@ Following command is required in order to run fast api
    uvicorn --host 0.0.0.0 --port 8002 fast_ed2:app --reload
   ```
 
-##[Docker](https://hub.docker.com/)
+# [Docker](https://hub.docker.com/)
 
 For convenience and handle incompatibility issue. we use docker to deploy the label tool,
 scrapper, models by docker. Since we have already finished writing docker file. you just 
